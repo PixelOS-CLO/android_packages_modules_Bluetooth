@@ -248,7 +248,7 @@ filegroup {
 // Bluetooth APK
 android_app {
     name: "Bluetooth",
-    certificate: ":com.android.bluetooth.certificate",
+    certificate: "bluetooth",
     static_libs: ["BluetoothLib"],
     defaults: [
         "bluetooth_framework_errorprone_rules",
@@ -310,7 +310,3 @@ genrule {
     out: ["com/android/bluetooth/BluetoothStatsLog.java"],
 }
 
-android_app_certificate {
-    name: "com.android.bluetooth.certificate",
-    certificate: "certs/com.android.bluetooth",
-}
